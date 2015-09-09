@@ -7,6 +7,10 @@ define(['react'], function(React){
       return undefined;
     }
 
+    if (obj.type && obj.props) {
+      return obj;
+    }
+
     if(obj.className && obj.className.join){
       obj.className = obj.className.join(' ');
     }
